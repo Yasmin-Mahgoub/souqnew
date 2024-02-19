@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600&family=Comfortaa:wght@300;400;500&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!--header start-->
+    <!--top bar start-->
+    <div class="top-bar">
+      <div class="container top-container">
+        <div class="welcome">Welcome to Souq965!</div>
+
+        <div class="lang-setting">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span>عربي</span><i class="fa-solid fa-sort-down"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">عربي</a></li>
+              <li><a class="dropdown-item" href="#">English</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--top bar End-->
+    <!--nav bar start-->
+    <div class="navigation-section">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#side-menu1"
+            aria-controls="#side-menu1"
+            id="sidebarToggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" />
+          </a>
+          <div class="mini-screens-icons d-lg-none">
+            <div class="lang-setting">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>ع</span><i class="fa-solid fa-sort-down"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">عربي</a></li>
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                </ul>
+              </div>
+            </div>
+            <a href="">
+              <div
+                role="presentation"
+                id="searchFormHeader"
+                class="search-trigger"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </a>
+
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+
+          <!-- side navigation-->
+
+          <div class="side-menu collapse scrollable-container" id="side-menu1">
+            <div class="buttons" id="myDIV">
+              <button id="btn_option1" class="opt1 active btn">
+                CATEGORIES
+              </button>
+              <button id="btn_option2" class="opt2 btn">ACCOUNTS</button>
+            </div>
+            <div class="option1" id="option1">
+              <a href="" class="view-all"> <span>View All</span></a>
+              <ul class="list-unstyled mainul level1">
+                <li
+                  class="nav-item navitem"
+                  id="submenu-trigger"
+                  class="side-menu-item"
+                >
+                  <a
+                    href=""
+                    class="sidemenu-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sub-pages"
+                    aria-expanded="false"
+                    aria-controls="sub-pages"
+                    >Winter</a
+                  >
+
+                  <ul
+                    class="list-unstyled collapse subsubmenu"
+                    id="sub-pages"
+                    data-bs-parent="#side-menu1"
+                  >
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Action</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Another-action</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Anotheraction1</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Anotheraction2</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="nav-item navitem"
+                  id="submenu-trigger"
+                  class="side-menu-item"
+                >
+                  <a
+                    href=""
+                    class="sidemenu-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#party"
+                    aria-expanded="false"
+                    aria-controls="party"
+                    >party</a
+                  >
+
+                  <ul
+                    class="list-unstyled collapse subsubmenu"
+                    id="party"
+                    data-bs-parent="#side-menu1"
+                  >
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Action</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Another-action</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Anotheraction1</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Anotheraction2</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">New Arrival</a>
+                </li>
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">Buy More Bay Less</a>
+                </li>
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">Bags</a>
+                </li>
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">container</a>
+                </li>
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">Personal Care</a>
+                </li>
+              </ul>
+            </div>
+            <div class="option2" id="option2">
+              <ul class="list-unstyled option2ul">
+                <li><a href=""> Track Order Status</a></li>
+                <li>
+                  <div class="col lang-setting">
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-toggle"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Language <i class="fa-solid fa-caret-right"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">عربي</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p>Contact Us :012345678</p>
+                </li>
+              </ul>
+
+              <button class="sign-in">
+                <a href="">sign In</a>
+              </button>
+            </div>
+          </div>
+          <div id="overlay" class="overlay"></div>
+
+          <!--Side navigation end-->
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link p-lg-3 active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3" href="track-order.html"
+                  >Track Order</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link p-lg-3 dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About Us
+                </a>
+                <ul
+                  class="dropdown-menu about-dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="terms-condition.html"
+                      >Terms & Condition</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="policy.html"
+                      >privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link p-lg-3"
+                  href="contact-us.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link p-lg-3"
+                  href="sale.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Sale
+                </a>
+                <span class="before-combine"></span>
+                <span class="combine">Sale</span>
+              </li>
+            </ul>
+            <div class="log-reg">
+              <i class="fa-regular fa-user"></i>
+              <a class="Login p-2" href="sign-in.html "> Login</a>
+              <span class="separator"></span>
+              <a href="sign-in.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="header-bottom">
+      <div class="container top-container">
+        <div class="d-sm-none d-lg-block">
+          <div
+            class="categories-menu dropdown-toggle"
+            data-bs-toggle="dropdown"
+            role="button"
+            id="categories-menu1"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div class="dropdown collapse d-lg-block" id="option1">
+              <div class="con">
+                <i class="fa-solid fa-bars-staggered"></i>
+
+                <div class="category-title">
+                  <a href="all-categories.html">All Categories</a>
+                </div>
+              </div>
+
+              <div class="all-cat-separator"></div>
+              <div class="menu-nav-app dropend">
+                <ul
+                  class="dropdown-menu first-level"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="multilevelDropdownMenu1"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      New Arrival</a
+                    >
+                    <ul
+                      class="dropdown-menu second-level"
+                      aria-labelledby="multilevelDropdownMenu1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="" class="dropdown-item">Action</a></li>
+                  <li><a href="" class="dropdown-item">Action</a></li>
+                  <li><a href="" class="dropdown-item">Action</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="multilevelDropdownMenu2"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Multilevel Action 2</a
+                    >
+                    <ul
+                      class="dropdown-menu second-level"
+                      aria-labelledby="multilevelDropdownMenu2"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-form m-auto">
+          <form class="d-flex searching">
+            <div class="search-wrap">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Iam searching For"
+                aria-label="Search"
+              />
+              <div role="button" tabindex="0" class="search-icon">
+                <span class="search-button">Search</span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="wishes">
+          <div class="wish-wrap">
+            <a href=""><i class="fa-regular fa-heart"></i></a>
+            <a
+              class="btn"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasshoppingcart"
+              role="button"
+              aria-controls="offcanvasshoppingcart"
+            >
+              <i class="fa-solid fa-cart-shopping"></i> My Cart
+            </a>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasshoppingcart"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <div class="minicart_header">
+                  <h2><span>My Cart</span></h2>
+                  <i class="icon-cross" role="presentation"></i>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="minicart_inner">
+                  <div class="minicart_productlist">
+                    <div class="mini-cart">
+                      <div class="img-cart-container">
+                        <img src="img/dsc00442.jpg" alt="" />
+                      </div>
+                      <div class="cart-item-detail">
+                        <div class="item-name" role="presentation">
+                          Clear Plastic Dispenser Bottle - 500 ml
+                        </div>
+                        <div class="item-subtotal" style="color: rgb(0, 0, 0)">
+                          <span>EGP</span><span>&nbsp;</span><span>0</span
+                          ><span>.</span><span>750</span>
+                        </div>
+                        <div
+                          class="item-regular"
+                          style="color: rgb(0, 0, 0)"
+                        ></div>
+                        <div class="item-qty1">
+                          <input
+                            min="1"
+                            type="number"
+                            pattern="[1-9]*"
+                            value="1"
+                          />
+                        </div>
+                        <div class="item-action">
+                          <div role="button" tabindex="0" class="item-delete">
+                            <i class="fa-regular fa-trash-can"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="minicart_footer">
+                      <div class="summary">
+                        <div class="cart-total">
+                          <div class="subtotal">
+                            <div>
+                              <span class="label" style="color: rgb(0, 0, 0)"
+                                >Subtotal</span
+                              ><span class="price" style="color: rgb(0, 0, 0)"
+                                ><span>KWD</span><span>&nbsp;</span
+                                ><span>0</span><span>.</span
+                                ><span>750</span></span
+                              >
+                            </div>
+                          </div>
+                          <div class="grand_total">
+                            <div>
+                              <span class="label" style="color: rgb(0, 0, 0)"
+                                >Grand Total</span
+                              ><span class="price" style="color: rgb(0, 0, 0)"
+                                ><span>KWD</span><span>&nbsp;</span
+                                ><span>0</span><span>.</span
+                                ><span>750</span></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="minicartAction">
+                          <a href="shopping-cart.html"
+                            ><button
+                              class="mini-cart-view-cart-btn viewCartBtn"
+                            >
+                              VIEW &amp; EDIT CART
+                            </button></a
+                          >
+                          <div role="presentation">
+                            <a href="check-out.html"
+                              ><button class="checkoutBtn">
+                                GO TO CHECKOUT
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="default-header d-lg-none">
+              <div class="header-search"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Nav bar End-->
+
+    <!--header End-->
+    <!--shopping cart Body-->
+
+    <div class="checkout-bg">
+      <div class="container">
+        <div class="checkout-page-title">shopping cart</div>
+        <table class="table table-bordered">
+          <thead>
+            <tr class="cart-list-table-header">
+              <th scope="col">Items</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Subtotal</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <div class="cart-item-info">
+                  <div
+                    role="presentation"
+                    class="img-cart-container"
+                    style="border-color: rgb(245, 245, 245)"
+                  >
+                    <img
+                      src="img/dsc00518_1.jpg"
+                      alt="Clear Plastic Dispenser Bottle - 500 ml"
+                    />
+                  </div>
+                  <div class="name-and-option">
+                    <div class="item-name" role="presentation">
+                      Clear Plastic Dispenser Bottle - 500 ml
+                    </div>
+                  </div>
+                  <div class="item-action">
+                    <div role="button" tabindex="0" class="item-delete">
+                      <i class="fa-regular fa-trash-can"></i>
+                    </div>
+                  </div>
+                </div>
+              </th>
+              <td class="td-item-price">
+                <span>EGP</span><span>&nbsp;</span><span>0</span><span>.</span
+                ><span>750</span>
+              </td>
+              <td class="td-item-qty">
+                <div class="item-qty">
+                  <div class="minus-quantity" role="presentation">-</div>
+                  <input
+                    type="number"
+                    id="cart_item_qty_input_4528965"
+                    value="1"
+                  />
+                  <div class="increase-quantity" role="presentation">+</div>
+                </div>
+              </td>
+              <td class="td-item-subtotal">
+                <div class="item-subtotal" style="color: rgb(0, 0, 0)">
+                  <span>EGP</span><span>&nbsp;</span><span>0</span><span>.</span
+                  ><span>750</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="cart-item-info cart-item-info-mobile d-sm-block d-lg-none">
+          <div
+            role="presentation"
+            class="img-cart-container"
+            style="border-color: rgb(245, 245, 245)"
+          >
+            <img
+              src="img/dsc00518_1.jpg"
+              alt="Clear Plastic Dispenser Bottle - 500 ml"
+            />
+          </div>
+          <div class="name-and-option">
+            <div class="item-name" role="presentation">
+              Clear Plastic Dispenser Bottle - 500 ml
+            </div>
+            <div class="item-subtotal" style="color: rgb(0, 0, 0)">
+              <span>EGP</span><span>&nbsp;</span><span>0</span><span>.</span
+              ><span>750</span>
+            </div>
+          </div>
+          <div class="item-qty">
+            <input min="1" type="number" pattern="[1-9]*" value="1" />
+          </div>
+          <div class="item-action">
+            <div role="button" tabindex="0" class="item-delete">
+              <i class="fa-regular fa-trash-can"></i>
+            </div>
+          </div>
+        </div>
+        <div class="cart-list-table-action">
+          <div class="continue-shopping" text="Continue Shopping">
+            Continue Shopping
+          </div>
+          <div class="right-buttons">
+            <div class="clear-all-item" text="Clear All Items">
+              Clear All Items
+            </div>
+            <div class="update-shopping-cart" text="Update Shopping Cart">
+              Update Shopping Cart
+            </div>
+          </div>
+        </div>
+        <div class="cart-footer row">
+          <div class="col-md-4">
+            <div class="cart-coupon-form">
+              <div class="cart-coupon-form-title1">Apply Discount Code</div>
+              <div class="coupon-code">
+                <div role="button" class="coupon-code-title" tabindex="0">
+                  <div>Add a Coupon Code</div>
+                  <div>
+                    <svg
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      x="0px"
+                      y="0px"
+                      class=""
+                      viewBox="0 0 24 24"
+                      style="
+                        display: inline-block;
+                        color: rgba(0, 0, 0, 0.87);
+                        fill: rgba(0, 0, 0, 0.87);
+                        height: 25px;
+                        width: 25px;
+                        user-select: none;
+                        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+                      "
+                    >
+                      <path
+                        d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="coupon-code-area coupon-open">
+                  <input
+                    id="coupon-code-input"
+                    class="coupon_field"
+                    type="text"
+                    placeholder="Enter discount code"
+                    value=""
+                  />
+                  <div class="submit-coupon false" text="Apply">Apply</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4">
+            <div class="total-section">
+              <div class="total-section-title">Total</div>
+              <div class="summary">
+                <div class="cart-total">
+                  <div class="subtotal">
+                    <div>
+                      <span class="label" style="color: rgb(0, 0, 0)"
+                        >Subtotal</span
+                      ><span class="price" style="color: rgb(0, 0, 0)"
+                        ><span>EGP</span><span>&nbsp;</span>
+                        <span>750</span></span
+                      >
+                    </div>
+                  </div>
+                  <div class="grand_total">
+                    <div>
+                      <span class="label" style="color: rgb(0, 0, 0)"
+                        >Grand Total</span
+                      ><span class="price" style="color: rgb(0, 0, 0)"
+                        ><span>EGP</span><span>&nbsp;</span>
+                        <span>750</span></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="cart-btn-section">
+                <div
+                  id="go-checkout"
+                  class="go-checkout"
+                  text="Proceed to checkout"
+                >
+                  Proceed to checkout
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--shopping cart Body End-->
+    <!--Footer Section Start-->
+
+    <div class="footer pt-4 pb-2 text-black-50 text-center text-md-start">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 footer-col">
+            <div class="links">
+              <ul class="list-unstyled lh-lg">
+                <li>
+                  <a href="">TERMS & CONDITIONS</a>
+                </li>
+                <li><a href="">SHIPPING POLICY</a></li>
+                <li><a href="">PRIVACY POLICY</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 footer-col">
+            <div class="links">
+              <ul class="list-unstyled lh-lg">
+                <li>
+                  <a href="">RETURN & REFUND POLICY</a>
+                </li>
+                <li><a href="">PAYMENT POLICY</a></li>
+                <li><a href="">CONTACT US</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-lg-block d-sm-none links news1">
+            <div class="newsletter-title">SUBSCRIBE NEWSLETTER</div>
+
+            <div class="desc-footer">
+              Lastest news and get early access to collection previews
+            </div>
+            <div class="input-group mb-3 mt-4 newsletter">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter email"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-success border-rad"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa-solid fa-location-arrow"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-lg-block d-sm-none subscr1">
+            <div class="info">
+              <img src="img/logo.png" alt="" />
+              <div class="info-cont">
+                <div class="desc-footer">Follow us to get sales and more</div>
+                <ul class="d-flex mt-2 list-unstyled gap-3 social">
+                  <li><a href=""></a><i class="fa-brands fa-instagram"></i></li>
+                  <li><a href=""></a><i class="fa-brands fa-facebook"></i></li>
+                  <li><a href=""></a><i class="fa-brands fa-twitter"></i></li>
+                  <li><a href=""></a><i class="fa-brands fa-snapchat"></i></li>
+                </ul>
+                <div class="copyright">
+                  © 2024 Souq965. All Rights Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-mobile d-lg-none d-sm-block col-md-6">
+            <ul class="d-flex mt-2 list-unstyled gap-3 social">
+              <li><a href=""></a><i class="fa-brands fa-instagram"></i></li>
+              <li><a href=""></a><i class="fa-brands fa-facebook"></i></li>
+              <li><a href=""></a><i class="fa-brands fa-twitter"></i></li>
+              <li><a href=""></a><i class="fa-brands fa-snapchat"></i></li>
+            </ul>
+            <div class="info"><img src="img/logo.png" alt="" /></div>
+            <div class="newsletter-title">SUBSCRIBE NEWSLETTER</div>
+
+            <div class="desc-footer">
+              Lastest news and get early access to collection previews
+            </div>
+            <div class="input-group mb-3 mt-4 newsletter">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter email"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-success border-rad"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa-solid fa-location-arrow"></i>
+              </button>
+            </div>
+            <div class="copyright">© 2024 Souq695. All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+      class="float-whats"
+      target="_blank"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!--Footer Section End-->
+
+    <script>
+      var btn_option1 = document.getElementById("btn_option1");
+      var btn_option2 = document.getElementById("btn_option2");
+      var option1 = document.getElementById("option1");
+      var option2 = document.getElementById("option2");
+      btn_option1.addEventListener("click", () => {
+        option1.style.display = "block";
+        option2.style.display = "none";
+      });
+      btn_option2.addEventListener("click", () => {
+        option1.style.display = "none";
+        option2.style.display = "block";
+      });
+    </script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-migrate-3.4.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- <script src="../souq965/js/main.js"></script> -->
+  </body>
+</html>

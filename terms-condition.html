@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="./img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600&family=Comfortaa:wght@300;400;500&family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Souq965</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/slick-theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!--header start-->
+    <!--top bar start-->
+        <div class="top-bar">
+      <div class="container top-container">
+        <div class="welcome">Welcome to Souq965!</div>
+
+        <div class="lang-setting">
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <span>عربي</span><i class="fa-solid fa-sort-down"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">عربي</a></li>
+              <li><a class="dropdown-item" href="#">English</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--top bar End-->
+    <!--nav bar start-->
+    <div class="navigation-section">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#side-menu1"
+            aria-controls="#side-menu1"
+            id="sidebarToggle"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="" />
+          </a>
+          <div class="mini-screens-icons d-lg-none">
+            <div class="lang-setting">
+              <div class="dropdown">
+                <button
+                  class="btn dropdown-toggle"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span>ع</span><i class="fa-solid fa-sort-down"></i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">عربي</a></li>
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                </ul>
+              </div>
+            </div>
+            <a href="">
+              <div
+                role="presentation"
+                id="searchFormHeader"
+                class="search-trigger"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </a>
+
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+
+          <!-- side navigation-->
+
+          <div class="side-menu collapse scrollable-container" id="side-menu1">
+            <div class="buttons" id="myDIV">
+              <button id="btn_option1" class="opt1 active btn">
+                CATEGORIES
+              </button>
+              <button id="btn_option2" class="opt2 btn">ACCOUNTS</button>
+            </div>
+            <div class="option1" id="option1">
+              <a href="" class="view-all"> <span>View All</span></a>
+              <ul class="list-unstyled mainul level1">
+                <li
+                  class="nav-item navitem"
+                  id="submenu-trigger"
+                  class="side-menu-item"
+                >
+                  <a
+                    href=""
+                    class="sidemenu-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#sub-pages"
+                    aria-expanded="false"
+                    aria-controls="sub-pages"
+                    >Winter</a
+                  >
+
+                  <ul
+                    class="list-unstyled collapse subsubmenu"
+                    id="sub-pages"
+                    data-bs-parent="#side-menu1"
+                  >
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Action</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Another-action</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Anotheraction1</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Anotheraction2</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li
+                  class="nav-item navitem"
+                  id="submenu-trigger"
+                  class="side-menu-item"
+                >
+                  <a
+                    href=""
+                    class="sidemenu-link"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#party"
+                    aria-expanded="false"
+                    aria-controls="party"
+                    >party</a
+                  >
+
+                  <ul
+                    class="list-unstyled collapse subsubmenu"
+                    id="party"
+                    data-bs-parent="#side-menu1"
+                  >
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Action</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Another-action</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Anotheraction1</a
+                      >
+                    </li>
+                    <li class="sidemenu-item">
+                      <a class="dropdown-item sidemenu-link1" href="#"
+                        >Anotheraction2</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">New Arrival</a>
+                </li>
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">Buy More Bay Less</a>
+                </li>
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">Bags</a>
+                </li>
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">container</a>
+                </li>
+                <li class="side-menu-item">
+                  <a href="" class="sidemenu-link">Personal Care</a>
+                </li>
+              </ul>
+            </div>
+            <div class="option2" id="option2">
+              <ul class="list-unstyled option2ul">
+                <li><a href=""> Track Order Status</a></li>
+                <li>
+                  <div class="col lang-setting">
+                    <div class="dropdown">
+                      <a
+                        class="dropdown-toggle"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Language <i class="fa-solid fa-caret-right"></i>
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li><a class="dropdown-item" href="#">عربي</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <p>Contact Us :012345678</p>
+                </li>
+              </ul>
+
+              <button class="sign-in">
+                <a href="">sign In</a>
+              </button>
+            </div>
+          </div>
+          <div id="overlay" class="overlay"></div>
+
+          <!--Side navigation end-->
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link p-lg-3 active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p-lg-3" href="track-order.html"
+                  >Track Order</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link p-lg-3 dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  About Us
+                </a>
+                <ul
+                  class="dropdown-menu about-dropdown"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li>
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="terms-condition.html"
+                      >Terms & Condition</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="policy.html"
+                      >privacy Policy</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link p-lg-3"
+                  href="contact-us.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link p-lg-3"
+                  href="sale.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Sale
+                </a>
+                <span class="before-combine"></span>
+                <span class="combine">Sale</span>
+              </li>
+            </ul>
+            <div class="log-reg">
+              <i class="fa-regular fa-user"></i>
+              <a class="Login p-2" href="sign-in.html "> Login</a>
+              <span class="separator"></span>
+              <a href="sign-in.html">Register</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="header-bottom">
+      <div class="container top-container">
+        <div class="d-sm-none d-lg-block">
+          <div
+            class="categories-menu dropdown-toggle"
+            data-bs-toggle="dropdown"
+            role="button"
+            id="categories-menu1"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <div class="dropdown collapse d-lg-block" id="option1">
+              <div class="con">
+                <i class="fa-solid fa-bars-staggered"></i>
+
+                <div class="category-title">
+                  <a href="all-categories.html">All Categories</a>
+                </div>
+              </div>
+
+              <div class="all-cat-separator"></div>
+              <div class="menu-nav-app dropend">
+                <ul
+                  class="dropdown-menu first-level"
+                  aria-labelledby="dropdownMenuButton"
+                >
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="multilevelDropdownMenu1"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      New Arrival</a
+                    >
+                    <ul
+                      class="dropdown-menu second-level"
+                      aria-labelledby="multilevelDropdownMenu1"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a href="" class="dropdown-item">Action</a></li>
+                  <li><a href="" class="dropdown-item">Action</a></li>
+                  <li><a href="" class="dropdown-item">Action</a></li>
+                  <li>
+                    <a
+                      class="dropdown-item dropdown-toggle"
+                      href="#"
+                      id="multilevelDropdownMenu2"
+                      data-bs-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                      >Multilevel Action 2</a
+                    >
+                    <ul
+                      class="dropdown-menu second-level"
+                      aria-labelledby="multilevelDropdownMenu2"
+                    >
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-form m-auto">
+          <form class="d-flex searching">
+            <div class="search-wrap">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Iam searching For"
+                aria-label="Search"
+              />
+              <div role="button" tabindex="0" class="search-icon">
+                <span class="search-button">Search</span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="wishes">
+          <div class="wish-wrap">
+            <a href=""><i class="fa-regular fa-heart"></i></a>
+            <a
+              class="btn"
+              data-bs-toggle="offcanvas"
+              href="#offcanvasshoppingcart"
+              role="button"
+              aria-controls="offcanvasshoppingcart"
+            >
+              <i class="fa-solid fa-cart-shopping"></i> My Cart
+            </a>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="offcanvasshoppingcart"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <div class="minicart_header">
+                  <h2><span>My Cart</span></h2>
+                  <i class="icon-cross" role="presentation"></i>
+                </div>
+                <button
+                  type="button"
+                  class="btn-close text-reset"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="minicart_inner">
+                  <div class="minicart_productlist">
+                    <div class="mini-cart">
+                      <div class="img-cart-container">
+                        <img src="img/dsc00442.jpg" alt="" />
+                      </div>
+                      <div class="cart-item-detail">
+                        <div class="item-name" role="presentation">
+                          Clear Plastic Dispenser Bottle - 500 ml
+                        </div>
+                        <div class="item-subtotal" style="color: rgb(0, 0, 0)">
+                          <span>EGP</span><span>&nbsp;</span><span>0</span
+                          ><span>.</span><span>750</span>
+                        </div>
+                        <div
+                          class="item-regular"
+                          style="color: rgb(0, 0, 0)"
+                        ></div>
+                        <div class="item-qty1">
+                          <input
+                            min="1"
+                            type="number"
+                            pattern="[1-9]*"
+                            value="1"
+                          />
+                        </div>
+                        <div class="item-action">
+                          <div role="button" tabindex="0" class="item-delete">
+                            <i class="fa-regular fa-trash-can"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="minicart_footer">
+                      <div class="summary">
+                        <div class="cart-total">
+                          <div class="subtotal">
+                            <div>
+                              <span class="label" style="color: rgb(0, 0, 0)"
+                                >Subtotal</span
+                              ><span class="price" style="color: rgb(0, 0, 0)"
+                                ><span>KWD</span><span>&nbsp;</span
+                                ><span>0</span><span>.</span
+                                ><span>750</span></span
+                              >
+                            </div>
+                          </div>
+                          <div class="grand_total">
+                            <div>
+                              <span class="label" style="color: rgb(0, 0, 0)"
+                                >Grand Total</span
+                              ><span class="price" style="color: rgb(0, 0, 0)"
+                                ><span>KWD</span><span>&nbsp;</span
+                                ><span>0</span><span>.</span
+                                ><span>750</span></span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                        <div class="minicartAction">
+                          <a href="shopping-cart.html"
+                            ><button
+                              class="mini-cart-view-cart-btn viewCartBtn"
+                            >
+                              VIEW &amp; EDIT CART
+                            </button></a
+                          >
+                          <div role="presentation">
+                            <a href="check-out.html"
+                              ><button class="checkoutBtn">
+                                GO TO CHECKOUT
+                              </button></a
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="default-header d-lg-none">
+              <div class="header-search"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Nav bar End-->
+
+    <!--header End-->
+    <!--about Body-->
+    
+      <div class="about-inner">
+        <div class="container">
+           
+          <div class="about-title">
+            <h1>Terms & condition</h1>
+            <p>&nbsp;</p>
+          </div>
+           <div class="terms-condition">
+            
+            <p>
+              <em
+                ><span style="font-weight: 400"
+                  >(This electronic record is generated by a computer system and
+                  does not require any physical or digital signatures.)</span
+                ></em
+              >
+            </p>
+            <p>
+              <span style="font-weight: 400"
+                >The domain name www.temoorst.com (hereinafter referred to as
+                "Website") is owned by TEMOORST GENERAL TRADING ,LLC., Kuwait
+                (hereinafter referred to as "TEMOORST").</span
+              >
+            </p>
+            <p>
+              <span style="font-weight: 400"
+                >Your use of the Website and services and tools are governed by
+                the following terms and conditions ("Terms of Use") as
+                applicable to the Website including the applicable policies
+                which are incorporated herein by way of reference. If You
+                transact on the Website, You shall be subject to the policies
+                that are applicable to the Website for such transaction. By mere
+                use of the Website, You shall be contracting with Temoorst and
+                these terms and conditions including the policies constitute
+                your binding obligations, with Temoorst.</span
+              >
+            </p>
+            <ul>
+              <li>
+                <p>1</p>
+                <span style="font-weight: 400"
+                  >By using www.temoorst.com registering with us or using our
+                  services, you are binding obligations by the Terms and
+                  Conditions stated hereafter. Temoorst reserves rights to
+                  change Terms and Conditions at any time and will post updated
+                  version on Website. User advised to read the Terms and
+                  Condition before any interaction between User and Temoorst.
+                  Disagreeing to stated Terms and Conditions shall discontinue
+                  the usage of www.temoorst.com</span
+                >
+              </li>
+              <li>
+                <p>2</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >If you use the Website, You shall be responsible for
+                    maintaining the confidentiality of your Display Name and
+                    Password and You shall be responsible for all activities
+                    that occur under your Display Name and Password. You agree
+                    that if You provide any information that is untrue,
+                    inaccurate, not current or incomplete or We have reasonable
+                    grounds to suspect that such information is untrue,
+                    inaccurate, not current or incomplete, or not in accordance
+                    with the this Terms of Use, We shall have the right to
+                    indefinitely suspend or terminate or block access of your
+                    membership on the Website and refuse to provide You with
+                    access to the Website</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>3</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >If you register and create an Account, you are a
+                    “Registered User”. To be a Registered User, you must be 18
+                    years of age and must provide true and accurate information
+                    (including your name, date of birth, e-mail address,
+                    credit/debit card details and other details) as requested
+                    during the Account creation process. Subject to applicable
+                    law, as a parent or guardian of a minor aged between 18 and
+                    21, you may permit such minor to use your Account, on the
+                    basis that you remain fully liable for use of the Account
+                    and for any use of the Service by such minor through your
+                    Account. We may carry out further checks to verify your age
+                    with a registered credit reference (or similar) agency and,
+                    if we are unable to verify you are over 18 years, we may
+                    cancel your order.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>4</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >By registering at and using www.temoorst.com, you are
+                    obliged to offer correct information. You have to maintain
+                    confidentiality of your account, username and passwords or
+                    any other information given to Temoorst while creating an
+                    account.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>5</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >Registered members will be allowed to order and purchase
+                    either product or services via website platform. The order
+                    includes prices for the product, services, delivery charges
+                    and any other charges which are applicable and stated during
+                    the checkout process. All other conditions will be according
+                    to Temoorst Payment and Delivery Terms.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>6</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >User will be sent an acknowledgement email / confirmation
+                    email combining summary of the products / services purchased
+                    using www.temoorst.com with necessary details. In any
+                    circumstances such confirmation email / sms or phone calls
+                    will be considered as confirm orders.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>7</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >Once temoorst will verify the payment, order will be packed
+                    and dispatched. All orders will be delivered to the
+                    addresses mentioned during registration / ordering process.
+                    However, it will be null in case we do not accept your order
+                    or you have canceled it.</span
+                  ><span style="font-weight: 400"><br /></span>
+                </p>
+              </li>
+              <li>
+                <p>8</p>
+                <p>
+                  <strong>Disclaimer</strong
+                  ><span style="font-weight: 400"
+                    >: Pricing on any product(s) as is reflected on the Website
+                    may due to some technical issue, typographical error or
+                    product information published by Temoorst may be incorrectly
+                    reflected and in such an event Temoorst may cancel such your
+                    order(s).</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>9</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >We are accepting the payment though Mastercard / Visa Card
+                    and KNET cards. Once chosen, you will be directed to the
+                    either KNET gateway or Master / Visa card payment gateway to
+                    enter your confidential details. All information provided by
+                    you will be treated securely. Temoorst is fully secured
+                    website certified by Verisign, a trusted internet safety
+                    worldwide.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>10</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >Payment of products usually accepted as mentioned,
+                    displayed either in deal or on regular products pages
+                    throughout on www.temoorst.com. However, after having proper
+                    accuracy in content creation, maintaining database, creating
+                    product pages, it is possible that errors may occur. In case
+                    of finding such errors in the price or description mistake
+                    in the products you have ordered, you will be informed by
+                    the customer support as soon as possible canceling such
+                    order or modifying on accurate correct prices. In case, if
+                    not approachable the order will be fully treated as
+                    cancelled order. The refund will be paid in case of
+                    acceptance of payment.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>11</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >Definition: Replacement is the action or process of
+                    replacing something in place of another. A Buyer can request
+                    for replacement whenever he is not happy with the item,
+                    reason being damaged in shipping, Defective item, Item(s)
+                    missing, wrong item shipped and the like.</span
+                  >
+                </p>
+                <br />
+                <p>
+                  You will be asked for "Reason for Return". Among others, the
+                  following are the leading reasons:
+                </p>
+                <ul>
+                  <ul>
+                    <ul>
+                      <li>- Shipping was damaged</li>
+                      <li>- Item was defective</li>
+                      <li>- Item(s) were missing</li>
+                      <li>- Wrong item sent</li>
+                    </ul>
+                  </ul>
+                </ul>
+                <br />
+                <p>
+                  In case the Temoorst accepts the replacement request, you
+                  shall be required to return the product to the Temoorst and
+                  only after return of the product; Temoorst shall be obliged to
+                  provide the replacement product to the Buyer.
+                </p>
+              </li>
+              <li>
+                <br />
+                <p>12</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >Temoorst will have full rights to refuse services, cancel
+                    orders, remove or edit contents, terminate any accounts at
+                    their sole discretion.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>13</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >Limitation of Liability. IN NO EVENT SHALL TEMOORST BE
+                    LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR
+                    CONSEQUENTIAL DAMAGES OF ANY KIND IN CONNECTION WITH THESE
+                    TERMS OF USE, EVEN IF USER HAS BEEN INFORMED IN ADVANCE OF
+                    THE POSSIBILITY OF SUCH DAMAGES.<br
+                  /></span>
+                </p>
+              </li>
+              <li>
+                <p>14</p>
+                <p>
+                  <span style="font-weight: 400"
+                    >If you have any comments or queries in connection with the
+                    terms and conditions, please call our customer service on
+                    <a href="tel:+965 98835743">+965 98835743</a></span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>15</p>
+                <p>
+                  <span style="font-weight: 400">
+                    Our contact information is posted below:</span
+                  >
+                </p>
+                <p>
+                  <span style="font-weight: 400"
+                    >Address: Kuwait City, Sharq, Ahmad AlJaber Street, B8
+                    tower, 9th Floor, Office 4</span
+                  >
+                </p>
+                <p>
+                  <span style="font-weight: 400">Email:</span>
+                  <a href="mailto:support@temoorst.com">support@temoorst.com</a>
+                </p>
+                <p>
+                  <span style="font-weight: 400"> Phone:</span>
+                  <a href="tel:+965 22092030">+965 22092030</a> -
+                  <a href="tel:+965 98835743">+965 98835743</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--About Body End-->
+    <!--Footer Section Start-->
+
+    <div
+      class="footer pt-4 pb-2 text-black-50 text-center text-md-start "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 footer-col">
+            <div class="links">
+              <ul class="list-unstyled lh-lg">
+                <li>
+                  <a href="">TERMS & CONDITIONS</a>
+                </li>
+                <li><a href="">SHIPPING POLICY</a></li>
+                <li><a href="">PRIVACY POLICY</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 footer-col">
+            <div class="links">
+              <ul class="list-unstyled lh-lg">
+                <li>
+                  <a href="">RETURN & REFUND POLICY</a>
+                </li>
+                <li><a href="">PAYMENT POLICY</a></li>
+                <li><a href="">CONTACT US</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-lg-block d-sm-none links news1">
+            <div class="newsletter-title">SUBSCRIBE NEWSLETTER</div>
+
+            <div class="desc-footer">
+              Lastest news and get early access to collection previews
+            </div>
+            <div class="input-group mb-3 mt-4 newsletter">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter email"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-success border-rad"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa-solid fa-location-arrow"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 d-lg-block d-sm-none subscr1">
+            <div class="info">
+              <img src="img/logo.png" alt="" />
+              <div class="info-cont">
+                <div class="desc-footer">Follow us to get sales and more</div>
+                <ul class="d-flex mt-2 list-unstyled gap-3 social">
+                  <li><a href=""></a><i class="fa-brands fa-instagram"></i></li>
+                  <li><a href=""></a><i class="fa-brands fa-facebook"></i></li>
+                  <li><a href=""></a><i class="fa-brands fa-twitter"></i></li>
+                  <li><a href=""></a><i class="fa-brands fa-snapchat"></i></li>
+                </ul>
+                <div class="copyright">
+                  © 2024 TEMOORST. All Rights Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer-mobile d-lg-none d-sm-block col-md-6">
+            <ul class="d-flex mt-2 list-unstyled gap-3 social">
+              <li><a href=""></a><i class="fa-brands fa-instagram"></i></li>
+              <li><a href=""></a><i class="fa-brands fa-facebook"></i></li>
+              <li><a href=""></a><i class="fa-brands fa-twitter"></i></li>
+              <li><a href=""></a><i class="fa-brands fa-snapchat"></i></li>
+            </ul>
+            <div class="info"><img src="img/logo.png" alt="" /></div>
+            <div class="newsletter-title">SUBSCRIBE NEWSLETTER</div>
+
+            <div class="desc-footer">
+              Lastest news and get early access to collection previews
+            </div>
+            <div class="input-group mb-3 mt-4 newsletter">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter email"
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-success border-rad"
+                type="button"
+                id="button-addon2"
+              >
+                <i class="fa-solid fa-location-arrow"></i>
+              </button>
+            </div>
+            <div class="copyright">© 2024 TEMOORST. All Rights Reserved.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+    />
+    <a
+      href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202."
+      class="float-whats"
+      target="_blank"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <!--Footer Section End-->
+
+    <script>
+      var btn_option1 = document.getElementById("btn_option1");
+      var btn_option2 = document.getElementById("btn_option2");
+      var option1 = document.getElementById("option1");
+      var option2 = document.getElementById("option2");
+      btn_option1.addEventListener("click", () => {
+        option1.style.display = "block";
+        option2.style.display = "none";
+      });
+      btn_option2.addEventListener("click", () => {
+        option1.style.display = "none";
+        option2.style.display = "block";
+      });
+    </script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js.map"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-migrate-3.4.0.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/main.js"></script>
+    <!-- <script src="../souq965/js/main.js"></script> -->
+  </body>
+</html>
